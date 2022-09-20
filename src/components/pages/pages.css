@@ -1,0 +1,250 @@
+.contact,
+.booking {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(104, 121, 214, 0.52),
+      rgba(41, 125, 148, 0.73)
+    ),
+    url("../../assets/background/img-contact-us.jpg");
+  color: white;
+}
+
+.h2-special-color {
+  color: aquamarine;
+  text-align: center;
+}
+
+.contact-icon {
+  padding: 20px;
+}
+
+.google-map {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-hr {
+  margin: 30px;
+  border-style: double;
+}
+
+li {
+  width: 350px;
+}
+
+.contact-us {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(104, 121, 214, 0.52),
+      rgba(2, 2, 22, 0.73)
+    ),
+    url("../../assets/background/img-contact-us.jpg");
+}
+
+.advertising {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(97, 78, 236),
+      rgba(122, 122, 231, 0.73)
+    ),
+    url("../../assets/background/img-advertising.jpg");
+}
+
+.align-title-right-container {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.full-screen {
+  height: 90vh;
+}
+
+.container-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  font-size: 50px;
+  color: white;
+}
+
+.advertising-info {
+  background-image: url("../../assets/background/img-adv-info.jpg");
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advertising-contact {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(104, 121, 214, 0.52),
+    rgb(4, 4, 63)
+  );
+}
+
+.career {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(78, 86, 236),
+      rgba(17, 17, 21, 0.73)
+    ),
+    url("../../assets/background/img-career.jpg");
+  /* clip-path: circle(50%); */
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+}
+
+.apply-job-contact {
+  background-color: white;
+  color: black;
+}
+
+.apply-job-special-color {
+  color: orangered;
+  text-decoration: none;
+}
+
+.flex-baseline {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.border {
+  grid-column: span 1 / span 1;
+}
+@media screen and (min-width: 1024px) {
+  .flex-baseline {
+    gap: 10px;
+    display: flex;
+    /* align-items: baseline; */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .border {
+    border-style: double;
+    border-radius: 25px;
+    grid-column: span 2 / span 2;
+  }
+}
+
+.customButton {
+  background-color: white;
+  color: black;
+  width: 50%;
+  height: 2em;
+  font-size: 1.1rem;
+  border-radius: 15px;
+}
+
+.active {
+  background-color: aqua;
+  color: black;
+}
+
+.contact-side,
+.toggle-request {
+  margin-top: 30px;
+}
+
+.contain-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.req-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 0 5px;
+  background: white;
+  text-align: center;
+}
+.req-dot.active {
+  background: yellow;
+  color: black;
+}
+
+.page-no-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reminder-template {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+
+.career-container-grid {
+  color: black;
+  background: transparent;
+  display: table;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.standard-header-with-no-margin {
+  font-size: 30px;
+  font-weight: 1000;
+  color: black;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.b-container-grid {
+  color: black;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  place-content: center;
+  margin: 30px;
+}
+
+.b-box {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.b-box-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.b-box-phone {
+  width: 130px;
+  height: 130px;
+}
+.b-box-detail {
+  padding: 30px;
+  text-align: justify;
+}
+
+.zone-info {
+  font-size: 30px;
+  margin-top: 40px;
+  width: 80%;
+  text-align: justify;
+}
