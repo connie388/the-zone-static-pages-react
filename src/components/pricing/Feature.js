@@ -16,11 +16,10 @@ export default function Feature({ listDetail }) {
   return (
     <div>
       {listDetail && <div>{displayDetail(listDetail)}</div>}
-      <button>
-        <Link to="/booking" className="link-to">
-          BOOK
-        </Link>
-      </button>
+
+      <Link to="/booking" className="link-to">
+        <button>BOOK</button>
+      </Link>
     </div>
   );
 }

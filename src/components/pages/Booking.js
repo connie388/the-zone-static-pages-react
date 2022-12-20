@@ -7,7 +7,7 @@ const ReminderTemplate = (
     <p>
       Please note that the date and time specified may or may not be available.
     </p>
-    <p>
+    <p>setFormData
       Our staff will get back to you ASAP to confirm any booking. Thank you for
       understanding.
     </p>

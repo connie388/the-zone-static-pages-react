@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Service(props) {
   const { service, price, detail, image } = props;
@@ -9,9 +10,10 @@ export default function Service(props) {
       <h1>{service}</h1>
       <p className="price">{price}</p>
       <p className="service-detail">{detail}</p>
-      <p>
+
+      <Link className="linkbutton" to="/contact-us">
         <button>Contact Us</button>
-      </p>
+      </Link>
     </div>
   );
 }
