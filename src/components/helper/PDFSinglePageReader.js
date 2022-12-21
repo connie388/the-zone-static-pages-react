@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Helper.css";
-import { Page } from "react-pdf/dist/umd/entry.webpack";
-
+import { Page } from "react-pdf/dist/esm/entry.webpack";
 function PDFSinglePageReader({ numPages }) {
   const [pageNumber, setPageNumber] = useState(1); //setting 1 to show first page
 

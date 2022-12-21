@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Helper.css";
-import { Document, Page } from "react-pdf/dist/umd/entry.webpack";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import { useLocation } from "react-router-dom";
 import PDFSinglePageReader from "./PDFSinglePageReader";
 
