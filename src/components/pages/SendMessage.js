@@ -1,18 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SendMessage() {
+  const [test, setTest] = useState("");
+  const [inputValue, setInputValue] = useState({
+    organization: "",
+    contactPerson: "",
+    phone: "",
+    email: "",
+    preferredContactMethod: "",
+    message: "",
+  });
+
+  const {
+    organization,
+    contactPerson,
+    phone,
+    email,
+    preferredContactMethod,
+    message,
+  } = inputValue;
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInputValue((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+    console.log(inputValue);
+  };
+
+  async function onSubmit(e) {
+    e.preventDefault();
+
+    alert("Message sent");
+  }
+
   return (
     <div>
       <div className="standard-size-form">
         <h1>SEND US A MESSAGE</h1>
-
-        <form>
+        <form onSubmit={onSubmit}>
           <fieldset>
             <label>
               Organization
               <input
                 type="text"
                 name="organization"
+                value={organization}
+                onChange={handleChange}
                 required
                 placeholder="Name of Organization"
               />
@@ -22,7 +57,9 @@ function SendMessage() {
                 Contact Person
                 <input
                   type="text"
-                  name="contact-person"
+                  name="contactPerson"
+                  value={contactPerson}
+                  onChange={handleChange}
                   required
                   placeholder="Your Name"
                 />
@@ -32,6 +69,8 @@ function SendMessage() {
                 <input
                   type="phone"
                   name="phone"
+                  value={phone}
+                  onChange={handleChange}
                   required
                   placeholder="Your Contact Number"
                 />
@@ -42,6 +81,8 @@ function SendMessage() {
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={handleChange}
                 required
                 placeholder="Your Email Address"
               />
@@ -50,7 +91,9 @@ function SendMessage() {
               Preferred Contact Method
               <input
                 type="text"
-                name="preferred-contact-method"
+                name="preferredContactMethod"
+                value={preferredContactMethod}
+                onChange={handleChange}
                 required
                 placeholder="Email/Phone Call/Others"
               />
@@ -60,6 +103,8 @@ function SendMessage() {
               <input
                 type="text"
                 name="message"
+                value={message}
+                onChange={handleChange}
                 required
                 placeholder="Message"
               />
