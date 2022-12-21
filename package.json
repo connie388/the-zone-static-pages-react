@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack --mode development"
+    "start": "webpack --mode development",
+    "serve": "webpack serve --mode development",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
