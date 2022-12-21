@@ -1,10 +1,10 @@
 import React from "react";
 import VideoItem from "./VideoItem";
-import "../photos/Cards.css";
-import filmList from "../../assets/videos/filmList";
+import "../../styles/Cards.css";
+import filmList from "./filmList";
 
 function Videos() {
-  const videos = require.context("../../assets/videos", true);
+  const videos = require.context("./videos", true);
 
   return (
     <div className="cards">

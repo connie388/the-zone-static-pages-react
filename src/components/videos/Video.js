@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useLocation } from "react-router-dom";
 // import ReactPlayer from "react-player";
-import "../photos/Cards.css";
+import "../../styles/Cards.css";
 
 function Video() {
   let params = useParams();
@@ -9,7 +9,7 @@ function Video() {
   const queryParams = new URLSearchParams(location.search);
   const filetype = queryParams.get("filetype");
 
-  const videos = require.context("../../assets/videos", true);
+  const videos = require.context("./videos", true);
   let videosrc = videos(`./${params.filename}.${params.extension}`);
 
   return (

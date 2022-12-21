@@ -4,11 +4,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "production",
+  mode: "development",
   output: {
     filename: "bundle.js",
     path: path.resolve("dist"), // the bundle output path
-    publicPath: "/the-zone-static-pages-react/",
+    publicPath: "/",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -35,12 +35,9 @@ module.exports = {
         options: { limit: false },
       },
       {
-        test: /\.(png|jpe?g|gif|mp4)$/i,
-        use: [
-          {
-            loader: "file-loader",
-          },
-        ],
+        test: /\.(png|svg|jpg|jpeg|gif|mp4)$/,
+        exclude: /node_modules/,
+        use: ["file-loader?name=[name].[ext]"], // ?name=[name].[ext] is only necessary to preserve the original file name
       },
     ],
   },

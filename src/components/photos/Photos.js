@@ -1,10 +1,10 @@
 import React from "react";
 import PhotoItem from "./PhotoItem";
-import "./Cards.css";
-import photoList from "../../assets/images/photoList";
+import "../../styles/Cards.css";
+import photoList from "./photoList";
 
 function Photos() {
-  const images = require.context("../../assets/images", true);
+  const images = require.context("./photos", true);
 
   return (
     <div className="cards">

@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.css";
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -33,7 +33,7 @@ export default function App() {
           <Navbar />
           <div className="pageContent">
             <Routes>
-              <Route path="/" exact element={<Home />} />
+              <Route path="/the-zone-static-pages-react" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/photos" element={<Photos />} />

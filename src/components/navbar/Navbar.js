@@ -1,5 +1,5 @@
 import React from "react";
-import "./navbar.css";
+import "../../styles/navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -13,7 +13,7 @@ function Navbar() {
   };
   return (
     <div className="topnav" id="myTopnav">
-      <Link to="/" className="navitem">
+      <Link to="/the-zone-static-pages-react" className="navitem">
         Home
       </Link>
       <Link to="/services" className="navitem">

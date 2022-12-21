@@ -1,7 +1,6 @@
 import React from "react";
-import "./pricing.css";
 import Feature from "./Feature";
-
+import "../../styles/pricing.css";
 function Price(props) {
   return (
     <div className="card">

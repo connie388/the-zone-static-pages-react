@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../photos/Cards.css";
+import "../../styles/Cards.css";
 import { Button } from "../helper/Button";
 
 function VideoItem(props) {
