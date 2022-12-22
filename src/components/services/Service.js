@@ -6,7 +6,7 @@ export default function Service(props) {
 
   return (
     <div className="card">
-      <img className="img-services" src={image} alt={service} />
+      <img className="img-services" src={require(`./images/${image}`)} alt={service} />
       <h1>{service}</h1>
       <p className="price">{price}</p>
       <p className="service-detail">{detail}</p>

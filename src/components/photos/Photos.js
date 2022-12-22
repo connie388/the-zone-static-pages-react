@@ -4,7 +4,7 @@ import "../../styles/Cards.css";
 import photoList from "./photoList";
 
 function Photos() {
-  const images = require.context("./photos", true);
+  const images = require.context("./images", true);
 
   return (
     <div className="cards">
@@ -13,11 +13,11 @@ function Photos() {
         <div className="cards__wrapper">
           {photoList.map((item, idx) => {
             // let imgsrc = images(`./img-${item.index}.jpg`);
-            let imgsrc = images(`./${item.img}`);
+            // let imgsrc = images(`./images/${item.img}`);
             return (
               <PhotoItem
                 key={idx}
-                src={imgsrc}
+                src={item.img}
                 text={item.text}
                 label={item.label}
                 path={item.path}

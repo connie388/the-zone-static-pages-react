@@ -33,7 +33,7 @@ export default function App() {
           <Navbar />
           <div className="pageContent">
             <Routes>
-              <Route path="/the-zone-static-pages-react" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/photos" element={<Photos />} />

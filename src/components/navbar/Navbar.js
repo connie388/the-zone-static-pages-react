@@ -13,7 +13,7 @@ function Navbar() {
   };
   return (
     <div className="topnav" id="myTopnav">
-      <Link to="/the-zone-static-pages-react" className="navitem">
+      <Link to="/" className="navitem">
         Home
       </Link>
       <Link to="/services" className="navitem">

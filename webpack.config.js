@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve("dist"), // the bundle output path
-    publicPath: "/the-zone-static-pages-react/",
+    publicPath: "/",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -29,15 +29,54 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/, // styles files
         use: ["style-loader", "css-loader"],
       },
+      // {
+      //   test: /\.(png|woff|woff2|eot|ttf|svg|jpeg|jpg)$/, // to import images and fonts
+      //   loader: "url-loader",
+      //   options: { limit: false },
+      //   exclude: /node_modules/,
+      //   options: {
+      //     name: "[name].[ext]?[hash]",
+      //   },
+      // },
+
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg|jpeg)$/, // to import images and fonts
-        loader: "url-loader",
-        options: { limit: false },
+        test: /\.(png|jpg|jpeg|gif|jpeg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images", // folder name
+            },
+          },
+        ],
       },
-        {
-        test: /\.(png|svg|jpg|jpeg|gif|mp4)$/,
+
+      {
+        test: /\.(mp4)$/,
         exclude: /node_modules/,
-        use: ["file-loader?name=[name].[ext]"], // ?name=[name].[ext] is only necessary to preserve the original file name
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "videos", // folder name
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(svg)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "icons", // folder name
+            },
+          },
+        ],
       },
     ],
   },

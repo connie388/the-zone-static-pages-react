@@ -97,7 +97,7 @@ const memberInfo = [
 const DisplayPricingData = ({ thisPricingData }) => {
   return thisPricingData.map((item, index) => (
     // <div key={`displayPricingData${index}`} className="pricing-container">
-    <Price detail={item} />
+    <Price key={index} detail={item} />
     // </div>
   ));
 };

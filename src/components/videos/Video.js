@@ -10,7 +10,7 @@ function Video() {
   const filetype = queryParams.get("filetype");
 
   const videos = require.context("./videos", true);
-  let videosrc = videos(`./${params.filename}.${params.extension}`);
+  let videosrc = videos(`./videos/${params.filename}.${params.extension}`);
 
   return (
     // <div className="player-wrapper">

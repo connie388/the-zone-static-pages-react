@@ -7,7 +7,9 @@
     "build": "webpack --mode production",
     "start": "webpack --mode development",
     "serve": "webpack serve --mode development",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "startscript": "react-scripts start",
+    "buildscript": "react-scripts build"
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +20,8 @@
     "react-dom": "^18.2.0",
     "react-error-boundary": "^3.1.4",
     "react-pdf": "^6.2.0",
-    "react-router-dom": "^6.5.0"
+    "react-router-dom": "^6.5.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
@@ -34,5 +37,17 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

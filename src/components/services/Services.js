@@ -13,7 +13,7 @@ function Services() {
           detail="Offers a selection of inspired small plates. Using local ingredients
             and refined techniques, our menu showcases cuisine and cooking
             practices from around the globe."
-          image="./images/img-catering-service.jpg"
+          image="img-catering-service.jpg"
         />
 
         <Service
@@ -24,7 +24,7 @@ function Services() {
           expectations. We not only provide help in the interior decoration of
           venues, but also provide catering services, DJs and hosts and
           schedule timing for agenda and programming"
-          image="./images/img-event-consultation.jpeg"
+          image="img-event-consultation.jpeg"
         />
 
         <Service
@@ -33,7 +33,7 @@ function Services() {
           detail="Photo and video services capture your products and events in a very
           unique format. Work with a design firm that works in both mediums to
           showcase you best."
-          image="./images/img-photography.jpeg"
+          image="img-photography.jpeg"
         />
       </div>
     </>
