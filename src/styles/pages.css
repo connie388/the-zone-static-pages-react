@@ -5,7 +5,7 @@
       rgba(104, 121, 214, 0.52),
       rgba(41, 125, 148, 0.73)
     ),
-    url(./images/img-contact-us.jpg);
+    url(../assets/images/img-contact-us.jpg);
   color: white;
 }
 
@@ -39,7 +39,7 @@ li {
       rgba(104, 121, 214, 0.52),
       rgba(2, 2, 22, 0.73)
     ),
-    url(./images/img-contact-us.jpg);
+    url(../assets/images/img-contact-us.jpg);
 }
 
 .advertising {
@@ -48,7 +48,7 @@ li {
       rgb(97, 78, 236),
       rgba(122, 122, 231, 0.73)
     ),
-    url(./images/img-advertising.jpg);
+    url(../assets/images/img-advertising.jpg);
 }
 
 .align-title-right-container {
@@ -76,7 +76,7 @@ li {
 }
 
 .advertising-info {
-  background-image: url(./images/img-adv-info.jpg);
+  background-image: url(../assets/images/img-adv-info.jpg);
   color: white;
   width: 100%;
   display: flex;
@@ -99,7 +99,7 @@ li {
       rgb(78, 86, 236),
       rgba(17, 17, 21, 0.73)
     ),
-    url(./images/img-career.jpg);
+    url(../assets/images/img-career.jpg);
   /* clip-path: circle(50%); */
   clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
 }

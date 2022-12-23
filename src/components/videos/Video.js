@@ -9,8 +9,8 @@ function Video() {
   const queryParams = new URLSearchParams(location.search);
   const filetype = queryParams.get("filetype");
 
-  const videos = require.context("./videos", true);
-  let videosrc = videos(`./videos/${params.filename}.${params.extension}`);
+  // const videos = require.context("./videos", true);
+  // let videosrc = videos(`./${params.filename}.${params.extension}`);
 
   return (
     // <div className="player-wrapper">
@@ -25,7 +25,10 @@ function Video() {
     // </div>
 
     <video className="film-video" autoPlay>
-      <source src={videosrc} type={filetype} />
+      <source
+        src={require(`../../assets/videos/${params.filename}.${params.extension}`)}
+        type={filetype}
+      />
     </video>
   );
 }

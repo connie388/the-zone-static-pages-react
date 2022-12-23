@@ -5,7 +5,7 @@ const filmList = [
     filetype: "video/mp4",
     description: "",
     label: "Adventure",
-    path: "./videos",
+    path: "/video",
   },
   {
     filename: "video-2",
@@ -13,7 +13,7 @@ const filmList = [
     filetype: "video/mp4",
     description: "",
     label: "Luxury",
-    path: "./videos",
+    path: "/video",
   },
   {
     filename: "video-4",
@@ -21,7 +21,7 @@ const filmList = [
     filetype: "video/mp4",
     description: "Catering Service",
     label: "Service",
-    path: "./videos",
+    path: "/video",
   },
   {
     filename: "video-5",
@@ -29,7 +29,7 @@ const filmList = [
     filetype: "video/mp4",
     description: "Party Room Decoration",
     label: "Party Room",
-    path: "./videos",
+    path: "/video",
   },
 ];
 

@@ -26,7 +26,7 @@ function DiscountPopup() {
             <div className="party-photo-container">
               <img
                 className="party-photo"
-                src={require(`./images/img-party.jpg`)}
+                src={require(`../../assets/images/img-party.jpg`)}
                 alt="Party"
               />
             </div>

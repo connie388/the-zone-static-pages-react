@@ -7,7 +7,7 @@ function PhotoItem(props) {
         <Link className="cards__item__link" to={props.path}>
           <figure className="cards__item__pic-wrap" data-category={props.label}>
             <img
-              src={require(`./images/${props.src}`)}
+              src={require(`../../assets/images/${props.src}`)}
               alt="Travel"
               className="cards__item__img"
             />

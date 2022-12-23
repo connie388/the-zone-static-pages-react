@@ -1,12 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
 
 const dataSlider = [
-  // {
-  //   id: uuidv4(),
-  //   title: "Highest Rated VR Arcade",
-  //   subTitle: "80+ VR experiences and games",
-  //   img: "img1.jpg",
-  // },
+  {
+    id: uuidv4(),
+    title: "Highest Rated VR Arcade",
+    subTitle: "80+ VR experiences and games",
+    img: "img1.jpg",
+  },
   {
     id: uuidv4(),
     title: "The Top Climbing Gym",
@@ -19,12 +19,12 @@ const dataSlider = [
     subTitle: "Lorem",
     img: "img3.jpg",
   },
-  // {
-  //   id: uuidv4(),
-  //   title: "Lorem ipsum",
-  //   subTitle: "Lorem",
-  //   img: "img4.jpg",
-  // },
+  {
+    id: uuidv4(),
+    title: "Lorem ipsum",
+    subTitle: "Lorem",
+    img: "img4.jpg",
+  },
   {
     id: uuidv4(),
     title: "Lorem ipsum",

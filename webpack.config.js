@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/index.html", // to import index.html file inside index.js
+      template: "./src/index.html", // to import index.html file inside index.js
     }),
   ],
   devServer: {
@@ -74,6 +74,19 @@ module.exports = {
             options: {
               name: "[name].[ext]",
               outputPath: "icons", // folder name
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(pdf)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "documents", // folder name
             },
           },
         ],

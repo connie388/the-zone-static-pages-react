@@ -1,11 +1,10 @@
 import React from "react";
 import "../../styles/Footer.css";
 import { Link } from "react-router-dom";
+import termFile from "../../assets/documents/terms-and-conditions.pdf";
+import privacyFile from "../../assets/documents/privacy-policy.pdf";
 
 export default function Footer() {
-  const termFile = "./documents/terms-and-conditions.pdf";
-  const privacyFile = "./documents/privacy-policy.pdf";
-
   return (
     <div className="footer-container">
       <div className="footer-links">
@@ -13,12 +12,18 @@ export default function Footer() {
           <div className="footer-link-items">
             <h2>Company</h2>
             <Link to="/about-us">About Us</Link>
-            <Link to={`/pdf-reader?filename=${termFile}`}>
+            {/* <Link to={`/pdf-reader?filename=${termFile}`}>
               Terms of Service
-            </Link>
-            <Link to={`/pdf-reader?filename=${privacyFile}`}>
+            </Link> */}
+            <a href={termFile} target="_blank">
+              <p>Terms of Service</p>
+            </a>
+            {/* <Link to={`/pdf-reader?filename=${privacyFile}`}>
               Privacy Policy
-            </Link>
+            </Link> */}
+            <a href={privacyFile} target="_blank">
+              <p>Privacy Policy</p>
+            </a>
           </div>
           <div className="footer-link-items">
             <h2>Contact Us</h2>
@@ -57,7 +62,7 @@ export default function Footer() {
                 <img
                   className="mobile-app-icon-google mobile-app-image"
                   alt="Download mobile app from google"
-                  src="./logo/google-play-badge.png"
+                  src={require(`../../assets/icons/google-play-badge.png`)}
                 />
               </a>
 
@@ -65,7 +70,7 @@ export default function Footer() {
                 <img
                   className="mobile-app-icon-apple mobile-app-image"
                   alt="Download mobile app from apple"
-                  src="./logo/download-on-the-app-store-badge.png"
+                  src={require(`../../assets/icons/download-on-the-app-store-badge.png`)}
                 />
               </a>
             </div>

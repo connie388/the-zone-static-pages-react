@@ -1,9 +1,9 @@
 import React from "react";
 import "../../styles/pages.css";
-import rightArrow from "./arrow-right-from-bracket-solid.svg";
-import phonePhoto from "./img-phone.jpg";
-import communityPhoto from "./img-community.jpg";
-import handshakePhoto from "./img-handshake.jpg";
+import rightArrow from "../../assets/icons/arrow-right-from-bracket-solid.svg";
+import phonePhoto from "../../assets/images/img-phone.jpg";
+import communityPhoto from "../../assets/images/img-community.jpg";
+import handshakePhoto from "../../assets/images/img-handshake.jpg";
 import AdvertiseGroup from "./AdvertiseGroup";
 
 function Advertising() {

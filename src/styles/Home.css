@@ -9,7 +9,7 @@
       rgba(104, 121, 214, 0.52),
       rgba(41, 125, 148, 0.73)
     ),
-    url(./images/img-home-page.jpg);
+    url(../assets/images/img-home-page.jpg);
 }
 
 .home-title > h1 {

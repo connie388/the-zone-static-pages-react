@@ -4,13 +4,11 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
     "start": "webpack --mode development",
     "serve": "webpack serve --mode development",
-    "deploy": "gh-pages -d dist",
-    "startscript": "react-scripts start",
-    "buildscript": "react-scripts build"
-  },
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
+    },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -19,7 +17,6 @@
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^3.1.4",
-    "react-pdf": "^6.2.0",
     "react-router-dom": "^6.5.0",
     "react-scripts": "^5.0.1"
   },

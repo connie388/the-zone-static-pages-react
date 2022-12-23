@@ -38,11 +38,11 @@ h2 {
 }
 
 .services {
-  background-image: url(./images/img-service.jpg);
+  background-image: url(../assets/images/img-service.jpg);
 }
 
 .products {
-  background-image: url(./images/img-products.jpg);
+  background-image: url(../assets/images/img-products.jpg);
 }
 
 video {

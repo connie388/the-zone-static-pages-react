@@ -13,7 +13,7 @@ function Navbar() {
   };
   return (
     <div className="topnav" id="myTopnav">
-      <Link to="/" className="navitem">
+      <Link to="/thezone" className="navitem">
         Home
       </Link>
       <Link to="/services" className="navitem">

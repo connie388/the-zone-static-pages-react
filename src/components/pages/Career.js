@@ -31,7 +31,7 @@ function Career() {
             </div>
 
             <div className="space-around-container">
-              <img src={require(`./images/img-team.jpeg`)} alt="teamwork" />
+              <img src={require(`../../assets/images/img-team.jpeg`)} alt="teamwork" />
             </div>
           </div>
         </div>

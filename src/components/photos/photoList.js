@@ -5,14 +5,14 @@ const photoList = [
     index: uuidv4(),
     text: "Explore the minecraft feature party room",
     label: "Party Room Rental",
-    path: "./images",
+    path: "/pricing",
     img: "img-1.jpg",
   },
   {
     index: uuidv4(),
     text: "Princess feature room with catering services",
     label: "Event Planning",
-    path: "./images",
+    path: "/pricing",
     img: "img-2.jpg",
   },
 
@@ -20,14 +20,14 @@ const photoList = [
     index: uuidv4(),
     text: "Professional photography",
     label: "Photograpy Service",
-    path: "./images",
+    path: "/pricing",
     img: "img-3.jpg",
   },
   {
     index: uuidv4(),
     text: "Yummy yummy",
     label: "Catering Service",
-    path: "./images",
+    path: "/pricing",
     img: "img-4.jpg",
   },
 ];

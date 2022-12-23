@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 function SendMessage() {
-  const [test, setTest] = useState("");
   const [inputValue, setInputValue] = useState({
     organization: "",
     contactPerson: "",

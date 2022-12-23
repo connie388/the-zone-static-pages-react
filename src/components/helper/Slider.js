@@ -41,7 +41,7 @@ export default function Slider() {
               {obj.title}/{obj.subTitle}
               <img
                 alt="slide not found"
-                src={process.env.PUBLIC_URL + `/slideshow/${obj.img}`}
+                src={require(`../../assets/slideshow/${obj.img}`)}
               />
             </div>
           );

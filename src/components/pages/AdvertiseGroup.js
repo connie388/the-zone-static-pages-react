@@ -56,9 +56,9 @@ function AdvertiseGroup() {
         <div className="standard-size-form">
           <label>
             Budget
-            <select class="budget">
-              {/* <select onchange={sthfunct} class="budget" > */}
-              <option selected="selected" value="Select Budget">
+            <select className="budget">
+              {/* <select onchange={sthfunct} className="budget" > */}
+              <option defaultValue="selected" value="Select Budget">
                 Select Budget
               </option>
               <option value="Less than $1000">Less than $1000</option>
@@ -68,9 +68,9 @@ function AdvertiseGroup() {
           </label>
           <label>
             Advertise Media
-            <select class="media">
-              {/* <select onchange={sthfunct} class="budget" > */}
-              <option selected="selected" value="Select Media">
+            <select className="media">
+              {/* <select onchange={sthfunct} className="budget" > */}
+              <option defaultValue="selected" value="Select Media">
                 Select Media
               </option>
               <option value="Audio">Audio</option>
