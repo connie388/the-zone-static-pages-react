@@ -1,24 +1,22 @@
 {
   "name": "the-zone-static-pages-react",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server",
     "serve": "webpack serve --mode development",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d dist"
-    },
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "file-loader": "^6.2.0",
     "react": "^18.2.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^3.1.4",
-    "react-router-dom": "^6.5.0",
-    "react-scripts": "^5.0.1"
+    "react-router-dom": "^6.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
@@ -30,21 +28,8 @@
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
-    "url-loader": "^4.1.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

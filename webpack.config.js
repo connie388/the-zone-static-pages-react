@@ -2,22 +2,16 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const port = process.env.PORT || 3000;
+
 module.exports = {
-  entry: "./src/index.js",
   mode: "production",
+  entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
-    path: path.resolve("dist"), // the bundle output path
-    publicPath: "/",
+    filename: "bundle.[hash].js",
+    clean: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html", // to import index.html file inside index.js
-    }),
-  ],
-  devServer: {
-    port: 8081,
-  },
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -26,71 +20,43 @@ module.exports = {
         use: "babel-loader",
       },
       {
-        test: /\.(sa|sc|c)ss$/, // styles files
-        use: ["style-loader", "css-loader"],
-      },
-      // {
-      //   test: /\.(png|woff|woff2|eot|ttf|svg|jpeg|jpg)$/, // to import images and fonts
-      //   loader: "url-loader",
-      //   options: { limit: false },
-      //   exclude: /node_modules/,
-      //   options: {
-      //     name: "[name].[ext]?[hash]",
-      //   },
-      // },
-
-      {
-        test: /\.(png|jpg|jpeg|gif|jpeg)$/,
+        test: /\.css$/i,
         use: [
           {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images", // folder name
-            },
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
           },
         ],
       },
-
+      // https://requestmetrics.com/web-performance/fast-inline-images-react-webpack
+      // Webpack 5 has a new feature called Asset Modules which is meant to
+      // replace the url-loader, file-loader, and raw-loader’s used in Webpack 4 for this situation.
       {
-        test: /\.(mp4)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "videos", // folder name
-            },
+        test: /\.(png|jpg|svg|jpeg|pdf|mp4)$/i,
+        type: "asset",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024, // Inline images under 10KB
           },
-        ],
-      },
-      {
-        test: /\.(svg)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "icons", // folder name
-            },
-          },
-        ],
-      },
-      {
-        test: /\.(pdf)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "documents", // folder name
-            },
-          },
-        ],
+        },
+        generator: {
+          filename: "assets/[name]-[hash][ext]",
+        },
       },
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "public/index.html",
+      favicon: "public/favicon.ico",
+    }),
+  ],
+  devServer: {
+    host: "localhost",
+    port: port,
+    historyApiFallback: true,
+    open: true,
   },
 };
